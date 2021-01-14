@@ -1,0 +1,64 @@
+.introduction {
+	margin: auto;
+	width: 100%;
+}
+
+.introduction-one {
+	display: flex;
+	margin: auto;
+	width: 80%;
+}
+
+.introduction-one .image {
+	width: 596px;
+	height: 700px;
+	width: 50%;
+	margin: 0 80px 0 0;
+
+	background-color: gray;
+}
+
+.introduction-one .text {
+	width: 50%;
+	margin: 0 0 0 80px;
+}
+
+.introduction-one .text .text-content h3 {
+	font-size: 32px;
+	line-height: 38.4px;
+}
+
+.introduction-one .text .text-content p {
+	font-size: 14px !important;
+	font-size: 21px;
+}
+
+.introduction-two {
+	width: 80%;
+}
+
+.ourteam-container .name-image,
+.ourteam-container .description {
+	width: 53%;
+}
+
+.ourteam-container .name-image h1 {
+	width: 169px;
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Lato';
+	color: #4F4F4F;
+	font-size: 60px;
+}
+
+.ourteam-container .description {
+	display: flex;
+	align-items: center;
+}
+
+.ourteam-container .description p {
+	margin: auto;
+}

@@ -1,0 +1,431 @@
+body {
+    background-color: #F2F2EB;
+}
+
+.hoavan1 {
+    margin: 0
+}
+
+
+
+.hoavan1 img {
+    margin: 0;
+}
+
+.header {
+    display: block;
+    font-family: 'Times New Romans', serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    line-height: 18.4px;
+    font-weight: normal;
+    height: 145px;
+}
+
+.header .container-fluid {
+    display: block;
+    width: 80%;
+}
+
+.header .container-fluid .site-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container-fluid .site-menu li {
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.header .container-fluid .site-menu li a {
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+.header .container-fluid .site-menu li::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #FF6F61;
+    transition: 0.5s ease;
+    width: 0;
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+}
+
+.header .container-fluid .site-menu li:not(:nth-child(2)):hover::after {
+    width: 100%;
+}
+
+.header .container-fluid .site-menu li:nth-child(4):hover::after {
+    width: 0;
+}
+
+.header .container-fluid .site-menu li:nth-child(3):hover::after {
+    width: 0;
+}
+
+.header .container-fluid .has-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+    position: absolute;
+    /* padding: 4px 0 4px 4px; */
+    height: 110px;
+    z-index: 1;
+    width: 150px;
+    background-color: white;
+    transition: all 150ms linear;
+    transform: translate3d(0, -15px, 0);
+}
+
+.header .container-fluid .has-sub a {
+    padding: 4px 0 4px 0;
+    font-size: 17px;
+    transition: all 1s;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease;
+    height: 50%;
+    padding: 20px;
+}
+
+.header .container-fluid .has-sub a:hover {
+    color: white;
+    background-color: #FF6F61;
+}
+
+.header .container-fluid li:nth-child(2) {
+    position: relative;
+    /* transition: 0.5s ease; */
+}
+
+
+
+.header .container-fluid li:nth-child(2):hover>.has-sub {
+    opacity: 1;
+    visibility: visible;
+    top: 34px;
+
+}
+
+.header .container-fluid li:nth-child(3):hover>.has-sub {
+    opacity: 1;
+    visibility: visible;
+    top: 34px;
+
+}
+
+.header .logo {
+    height: 85px;
+}
+
+.header-bg {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.header-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome {
+    margin-top: 200px;
+}
+
+.welcome .welcome-text {
+    position: relative;
+    text-align: center;
+}
+
+.welcome .welcome-text .text-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+}
+
+.welcome .welcome-text .text-content {
+    font-family: 'Lato', sans-serif;
+    width: 64%;
+    margin: auto;
+}
+
+.welcome .services {
+    margin-top: 68px;
+}
+
+.welcome .services .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.welcome .services .services-item {
+    width: 406px;
+    height: 480px;
+}
+
+.welcome .services .hovereffect {
+    height: 480px;
+    width: 406px;
+    width: auto;
+}
+
+.welcome .services .hovereffect img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome .services h5 {
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*Slick*/
+.wedding-package {
+    height: 967px;
+}
+
+
+/* .wedding-package .splide__list {
+    width: 406px;
+    height: 100%;
+}
+
+.package-img-thumbnail {
+    height: 967px;
+    width: 406px;
+} */
+
+.package-img-thumbnail img {
+    height: 967px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wedding-package .splide__slide {
+    /* text-align: center; */
+    /* margin: 0 20px 0 0; */
+
+    display: flex;
+    justify-content: center;
+}
+
+.wedding-package .package-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wedding-package .package-name {
+    color: #FF6F61;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.wedding-package .package-money {
+    color: #5D5D5D;
+    font-family: 'Lato', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wedding-package .package-description {
+    margin-top: 34px;
+    flex: 1 1 auto;
+}
+
+.wedding-package .package-description .package-description-content {
+    font-family: 'Lato', sans-serif;
+    color: #5D5D5D;
+}
+
+.wedding-package .package-description p {
+    font-size: 15px;
+}
+
+.wedding-package .package-img-thumbnail img {
+    height: 540px;
+}
+
+.wedding-package .package-button {
+    height: 45px;
+    width: 124px;
+    background-color: #FF6F61;
+    color: white;
+    margin-bottom: 34px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    margin-top: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.wedding-package .splide__pagination {
+    bottom: -3.5em !important;
+}
+
+.wedding-package .package-container {
+    width: 86%;
+    background-color: white;
+    height: 1010px;
+    /* margin: auto; */
+    /* display: flex;
+    justify-content: flex-start;
+    flex-direction: column; */
+}
+
+.feedback {
+    margin-top: 8px;
+}
+
+/*Footer*/
+
+.footer {
+    display: block;
+    margin: 0;
+    padding: 52px 0;
+    background-color: #F4EEE8;
+    border: none;
+}
+
+.footer a {
+    color: #4d4d4d;
+}
+
+.footer .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 82%;
+}
+
+.footer .container-fluid .footer-menu1,
+.footer .container-fluid .footer-menu2,
+.footer .container-fluid .footer-logo,
+.footer .container-fluid .footer-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .container-fluid .footer-logo .footer-logo-icon {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer .container-fluid .footer-menu1,
+.footer .container-fluid .footer-menu2,
+.footer .container-fluid .footer-address {
+    line-height: 3;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.footer .container-fluid .footer-logo .footer-logo-icon i {
+    display: inline-block;
+    border-radius: 60px;
+    padding: 4px;
+    background-color: #FF6F61;
+    color: white;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1330px) {
+    .header .container-fluid .site-menu li {
+        padding: 10px;
+    }
+}
+
+
+/*FEEDBACK*/
+
+.feedback-item {
+    display: flex;
+    height: 580px;
+    width: auto;
+}
+
+.feedback-item .feedback-img {
+    width: 50%;
+}
+
+.feedback-item .feedback-content {
+    width: 50%;
+    padding: 20px 108px 25px 100px;
+    background-color: white;
+}
+
+.feedback-item .feedback-content .recipe-page {
+    display: block;
+    float: right
+}
+
+.feedback-item .feedback-content h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-style: regular;
+}
+
+.feedback-item .feedback-content h5 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+}
+
+.feedback-item .feedback-content p {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 15px !important;
+    line-height: 27px;
+}
+
+.feedback-item .feedback-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feedback-item .recipe-page {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    color: #b5b5b5;
+    position: relative;
+    right: -54px;
+    top: -10px;
+}
+
+.feedback-content .set-seemore {
+    margin-top: 50px;
+}
+
+@keyframes display {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

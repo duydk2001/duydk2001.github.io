@@ -1,0 +1,190 @@
+.image-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 555px;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-cover .content {
+    height: 233px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-fluid .search {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 700;
+    width: 25%;
+}
+
+.container-fluid .search .filter {
+    width: 100%;
+    margin-bottom: 65px;
+    padding: 0;
+
+}
+
+.container-fluid .search .filter input {
+    margin-right: 14px;
+    transform: scale(1.5);
+}
+
+.container-fluid .content {
+    width: 91%;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+}
+
+.container-fluid .content .search-box {
+    width: 100%;
+}
+
+.container-fluid .content .search-box .album-search {
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid .content .search-box button {
+    width: 90px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #FF6F61;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container-fluid .content .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 14px 0 0;
+}
+
+.container-fluid .content .main-content a {
+    /* width: 310px; */
+    /* height: 465px; */
+    /* margin-top: 21px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; */
+}
+
+.container-fluid .content .main-content .image-content {
+    width: 310px;
+    height: 465px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.container-fluid .content .main-content img {
+    width: 310px;
+    height: 465px !important;
+    position: absolute;
+    transition: all 0.3s;
+    display: block;
+    height: auto;
+    transform: scale(1);
+    object-fit: cover;
+
+}
+
+.container-fluid .content .main-content .image-content:hover img {
+    transform: scale(1.2);
+}
+
+.container-fluid .page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.container-fluid .page-square {
+    width: 410px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.container-fluid .page-square a {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.container-fluid .page-square .active {
+    background-color: #FF6F61;
+}
+
+@media only screen and (max-width: 1674px) {
+    .container-fluid .content .main-content .image-content:last-child {
+        width: 100%;
+        height: 465px;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .container-fluid .content .main-content .image-content:last-child img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .container-fluid .content .main-content .image-content:last-child {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .container-fluid .content .main-content .image-content:last-child img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
