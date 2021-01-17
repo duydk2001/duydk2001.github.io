@@ -17,7 +17,7 @@
 }
 
 .container-fluid {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: row;
 }
@@ -28,7 +28,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   font-family: 'Roboto Slab';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   width: 15%;
   margin-top: 100px;
@@ -48,8 +48,6 @@
 
 .container-fluid .content {
   width: 85%;
-  display: flex;
-  flex-flow: column wrap;
 }
 
 .container-fluid .content .search-box {
@@ -75,25 +73,27 @@
 }
 
 .container-fluid .content .main-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 57px;
+  margin-top: 30px;
 }
 
 #video-gallery {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
 }
 
 #video-gallery li {
-  width: 346px;
-  height: 203px;
-  margin-top: 15px;
+  width: 100%;
+  height: 173px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+}
+
+#video-gallery li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #video-gallery li:hover img {
