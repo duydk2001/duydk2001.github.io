@@ -69,7 +69,17 @@
   </header>
   <div class="header-bg-container-fluid" style="margin-top: 3px;">
     <div class="header-bg">
-      <img src="images/headerlogo.jpg" alt="">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img src="images/headerlogo.jpg" alt=""></li>
+            <li class="splide__slide"><img src="images/slide/banner 1.jpg" alt=""></li>
+            <li class="splide__slide"><img src="images/slide/banner2.jpg" alt=""></li>
+            <li class="splide__slide"><img src="images/slide/banner3.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
   <!--Welcome-->
@@ -461,8 +471,19 @@
       type: 'loop',
       perPage: 3,
       focus: 'center',
-      // autoplay: true,
+      autoplay: true,
     }).mount();
+  </script>
+  <script>
+    var bannerSlide = new Splide('.header-bg-container-fluid .header-bg .splide', {
+      type: 'loop',
+      autoplay: true,
+      pauseOnHover: true,
+      fixedHeight: '600px',
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      bannerSlide.mount();
+    });
   </script>
 </body>
 
